@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+}
+.wrapper {
+    border-radius: 5%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.calendar {
+    margin: auto;
+    width: 800px;
+    height: 520px;
+    background-color: rgb(204, 14, 14);
+    box-shadow: 0px 0px 15px 3px rgb(145, 141, 141);
+    padding: 25px 10px;
+}
+.Right {
+    border-radius: 25px 25px 25px 25px;
+    width: 60%;
+    height: 520px;
+    float: left;
+    background-color:rgba(240, 128, 120,1);
+
+}
+.events {
+    border-radius: 5%;
+    float: right;
+    width: 35%;
+    height: 520px;
+    background-color:rgb(235, 110, 101);
+}
+.month {
+    border-radius: 25px 25px 0px 0px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(109, 21, 21);
+    color : whitesmoke;
+    padding: 0px 10px;
+}
+.prev_month,.next_month {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: lighter;
+}
+.prev_month,.next_month:hover {
+    cursor: pointer;
+}
+.weekdays {
+    color: whitesmoke;
+    padding : 10px 0px 10px 10px;
+    display : grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color:rgb(235, 110, 101);
+}
+.weekdays div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(241, 88, 77);
+    
+}
+/*.date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 10px;
+    background-color: rgba(240, 128, 120,1);
+}
+.date div {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 80%;
+    border: 1px solid rgba(240, 128, 120,1);
+    background-color: rgba(230, 58, 46,0.5);
+}*/
+
+.date {
+    background-color:rgb(235, 110, 101);
+    padding : 10px 0px 20px 10px;
+    height: 350px;
+    
+    display : grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    border-radius: 0px 0px 25px 25px;
+}
+.date div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: rgba(241, 152, 147,0.5);
+    
+}
+.prev_date {
+    color: #5e5c50;
+}
+.next_date {
+    color: #5e5c50;
+}
+.today {
+    height: 105px;
+    width: 100px;
+    margin-top: 100px;
+    background-color: rgb(235, 110, 101);
+    margin-left: 90px;
+}
+.current_date {
+    font-size: 70px;
+    text-align: center;
+}
+.current_day {
+    text-align: center;
+}
+.event_input {
+    margin-top: 140px;
+    margin-left: 20px;
+}
+#event_input {
+    height: 25px;
+    border-radius: 10px;
+}
+.add_event {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    border-radius: 50%;
+    background-color: rgb(241, 66, 35);
+}
+.active {
+    background-color: rgb(34, 32, 32);
+}

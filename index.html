@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <title>Document</title>
+</head>
+<body onload="RenderCalendar()">
+    <div class="wrapper">
+        <div class="calendar">
+            <div class="Right">
+                <div class="month">
+                    <div class="prev_month" onclick="movemonth('prev')">
+                        <span>&#10094</span>
+                    </div>
+                    <div>
+                        <h2 id="date_str"></h2>
+                    </div>
+                    <div class="next_month" onclick="movemonth('next')">
+                        <span>&#10095</span>
+                    </div>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="date">
+
+                </div>
+            </div>
+            <div class="events">
+                <div class="today">
+                    <div class="current_date">
+                    </div>
+                    <div class="current_day"></div>
+                </div>
+                <div class="event_input">
+                    <div>
+                        <input type="text" name="event" id="event_input" placeholder="  Create Event">
+                    </div>
+                    <div class="add_event">
+                        +
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/calender.js"></script>
+</body>
+</html>
