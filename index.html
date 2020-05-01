@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/calendar.css">
+   
+    <script>
+        
+    </script>
+    <script src="./js/calender.js"></script>
     <title>Document</title>
 </head>
 <body onload="RenderCalendar()">
@@ -40,18 +45,20 @@
                     </div>
                     <div class="current_day"></div>
                 </div>
-                <div class="event_input">
+                <div id="event_info"></div>
+                <div class="event">
                     <div>
                         <input type="text" name="event" id="event_input" placeholder="  Create Event">
                     </div>
-                    <div class="add_event">
+                    <div class="add_event" onclick="add_event()">
                         +
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
-    <script src="./js/calender.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>
